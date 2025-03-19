@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: #2d2d2d;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  a {
+    color: #a2c2fc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: #64b6ff;
+  }
+  
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #2d2d2d;
+      padding: 20px;
+      width: 200px;
+    }
+  
+    .menu-links.active {
+      display: block;
+    }
+  }
+  
+  /* Profile Section */
+  #profile {
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .greeting {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .name {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .role {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+  
+  .btn-container {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #64b6ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3498db;
+  }
+  
+  /* Game Section */
+  #games {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .game-card {
+    margin-bottom: 30px;
+  }
+  
+  .game-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .game-card p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .game-card a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #64b6ff;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 40px 0;
+    background: #1f1f1f;
+  }
+  
+  footer .footer-nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  footer .footer-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  footer .footer-nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
