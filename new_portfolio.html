@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uchenna Ibeji - Junior Game Developer</title>
+    <link rel="stylesheet" href="new_stylesheet.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+      <div class="nav-container">
+        <div class="logo">Uchenna Ibeji</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#games" onclick="toggleMenu()">Games</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Profile Section -->
+    <header id="profile">
+      <div class="section__text">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="name">Uchenna Ibeji</h1>
+        <p class="role">Junior Game Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-primary" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+          <button class="btn btn-secondary" onclick="location.href='./#contact'">Contact Me</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h1 class="section-title">About Me</h1>
+      <p class="section-description">
+        I am a passionate Junior Game Developer with expertise in creating browser-based games. I specialize in JavaScript, HTML5, and popular game engines like Phaser.js and Pixi.js. My goal is to craft engaging and immersive game experiences. Recently, I completed a bootcamp at Just IT, where I enhanced my front-end development skills and game programming knowledge.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1 class="section-title">My Skills</h1>
+      <div class="skills-container">
+        <div class="skill-card">
+          <h2>HTML5</h2>
+          <p>Building interactive game environments using HTML5 Canvas API.</p>
+        </div>
+        <div class="skill-card">
+          <h2>CSS3</h2>
+          <p>Responsive game interfaces and smooth animations with CSS3.</p>
+        </div>
+        <div class="skill-card">
+          <h2>JavaScript</h2>
+          <p>Game logic, interactions, and event handling using vanilla JavaScript.</p>
+        </div>
+        <div class="skill-card">
+          <h2>Python</h2>
+          <p>Back-end game scripting and tools with Python for automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games">
+      <h1 class="section-title">My Games</h1>
+
+      <!-- Tic-Tac-Toe -->
+      <div class="game-card">
+        <h2><a href="tic-tac-toe/index.html">Tic-Tac-Toe</a></h2>
+        <p>A classic Tic-Tac-Toe game built using JavaScript, featuring interactive player versus player mode.</p>
+      </div>
+
+      <!-- Memory Game -->
+      <div class="game-card">
+        <h2><a href="memory-game/index.html">Memory Game</a></h2>
+        <p>A fun and engaging card-matching game that tests your memory. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <!-- Click Speed Test -->
+      <div class="game-card">
+        <h2><a href="click-speed-test/index.html">Click Speed Test</a></h2>
+        <p>How fast can you click? Challenge yourself with this click speed test. Built with JavaScript for handling timing and interactions.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1 class="section-title">Contact Me</h1>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:uchenna.ibeji.ui@gmail.com">uchenna.ibeji.ui@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/uchennaibeji</a></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
